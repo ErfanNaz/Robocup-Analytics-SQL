@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.zentoo.uicontroll.Sqlcontroller">
+   <children>
+      <TextArea fx:id="textArea_sqlInput" layoutX="14.0" layoutY="14.0" prefHeight="109.0" prefWidth="572.0" />
+      <Button layoutX="14.0" layoutY="137.0" mnemonicParsing="false" onAction="#action_sql" text="commit" />
+      <Button layoutX="89.0" layoutY="137.0" mnemonicParsing="false" onAction="#action_reload" text="reload Model" />
+      <ScrollPane layoutX="14.0" layoutY="176.0" prefHeight="370.0" prefWidth="572.0">
+         <content>
+            <Label fx:id="label_sqlOut" text="SQL output" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
